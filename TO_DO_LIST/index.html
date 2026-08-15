@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do list</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="icon" href="to-do-list.png" type="image/x-png">
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <i class="ri-todo-fill"></i>
+            <p>To Do List</p>
+        </div>
+        <div class="theme-toggle">
+            <button class="light-mode active"><i class="ri-sun-fill"></i></button>
+            <button class="dark-mode"><i class="ri-moon-fill"></i></button>
+        </div>
+    </div>
+    <div class="main">
+        <header>
+            <div class="left">
+                <h1>Hello, Divyanshi</h1>
+                <p>Lets make your day productive!</p>
+            </div>
+            <div class="right">
+                <i class="ri-calendar-2-line"></i>
+                <div class="date">
+                    <h4 id="date">31 May,2025</h4>
+                    <p id="day">Saturday</p>
+                </div>
+            </div>
+        </header> 
+        <div class="input-box">
+            <i class="ri-clipboard-line" id="logo2"></i>
+            <input type="text" placeholder="What's on your mind today?" id="task-input"> 
+            <button id="add-task">
+                <i class="ri-add-line"></i>
+            </button>
+        </div>
+        <p class="error-msg"></p>
+        <div class="priority-select">
+            <span>Priority</span>
+            <button class="priority-option active" data-priority="High">High</button>
+            <button class="priority-option" data-priority="Medium">Medium</button>
+            <button class="priority-option" data-priority="Low">Low</button>
+        </div>
+        <div class="task-section">
+            <div class="task-filter">
+                <button id="all" class="active">All</button>
+                <button id="active">Active</button>
+                <button id="completed">Completed</button>
+            </div>
+            <div class="task-container">
+                <!-- <div class="task-item"> -->
+                    <!-- <div class="task-left">
+                        <input type="checkbox">
+                        <p>Complete TO-DO List UI</p>
+                    </div>
+                    <div class="task-right">
+                        <span class="priority-high">• High</span>
+                        <button class="edit-btn save-btn">
+                            <i class="ri-edit-line"></i>
+                        </button>
+                        <button class="delete-btn">
+                            <i class="ri-delete-bin-6-line"></i>
+                        </button> -->
+                    <!-- </div> -->
+                <!-- </div> -->
+            
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
